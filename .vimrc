@@ -1,8 +1,10 @@
 set list
 set listchars=tab:»-,trail:-,eol:↲,extends:»,precedes:«,nbsp:%
 set nu
+set ruler
 set autoindent
 set hlsearch
+set laststatus=2
 
 syntax on
 
