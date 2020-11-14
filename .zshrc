@@ -16,3 +16,8 @@ alias glp='git log -p'
 alias gls='git ls-files'
 alias gst='git status'
 
+fpath=(/usr/local/share/zsh-completions $fpath)
+fpath=(~/.zsh/completion $fpath)
+autoload -U compinit
+compinit -u
+
