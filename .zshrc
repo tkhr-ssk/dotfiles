@@ -15,6 +15,11 @@ alias gll='git log --oneline'
 alias glp='git log -p'
 alias gls='git ls-files'
 alias gst='git status'
+if [[ -x `which colordiff` ]]; then
+  alias diff='colordiff -u'
+else
+  alias diff='diff -u'
+fi
 
 fpath=(/usr/local/share/zsh-completions $fpath)
 fpath=(~/.zsh/completion $fpath)
